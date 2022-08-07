@@ -17,6 +17,9 @@
     color: white;
     text-align: right;
     font-size: 32px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row-reverse;
 }
 #buttons {
     /* background-color: lime; */

@@ -19,12 +19,16 @@ function calculate() {
         document.querySelector("#display").innerHTML = output;
         displayText = output;
     }
+    document.getElementById("display").style.color = "lime"
+    document.getElementById("display").style.flexDirection="row"
     document.querySelector("#display").innerHTML = output;
     calculatorStorage = [output];
     inputValue = output
 }
 
 function press(key) {
+    document.getElementById("display").style.color = "white"
+    document.getElementById("display").style.flexDirection="row-reverse"
     inputValue += ""
     if(isOperator(key)) {
         calculatorStorage.push(inputValue);
@@ -55,6 +59,8 @@ function setOP(operator) {
 
 }
 function clr() {
+    document.getElementById("display").style.color = "white"
+    document.getElementById("display").style.flexDirection="row-reverse"
     displayText ="";
     inputValue = "";
     calculatorStorage = [0];
